@@ -1,0 +1,209 @@
+/* For mobile phones only */
+
+.coverphoto-container {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(255, 0, 0, 0)), url("https://res.cloudinary.com/adriantoddross/image/upload/v1551467742/Black%20Female%20Artist.jpg");
+	background-color: #3B444B;
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	min-height: 20em;
+	width: 100%;
+}
+
+.coverpage-container {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.coverpage-container p {
+	font-size: 1.4em;
+	line-height: 1.4em;
+	padding-bottom: 1em;
+}
+
+.cover-msg {
+	align-self: center;
+	color: white;
+	justify-self: center;
+	padding: 2.5em;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+p.cover-title {
+	text-transform: uppercase;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.5em;
+}
+
+span.cover-tagline {
+	font-weight: bold;
+}
+
+.buyers-container {
+	align-items: center;
+	background-color: #232B2B;
+	background-image: linear-gradient(to right, #414A4C, #3B444B);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: auto;
+	padding: 2.5em;
+}
+
+p.buyer-msg {
+	color: white;
+}
+
+button.buyerbutton {
+	background-color: white;
+	border-radius: 0;
+	color: black;
+	font-size: 1.3em;
+	margin: 0;
+}
+
+.boldtitle {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+}
+
+button.sellerbutton {
+	background-color: #232B2B;
+	border-radius: 0;
+	color: white;
+	font-size: 1.3em;
+	margin: 0;
+}
+
+.sellers-container {
+	align-items: center;
+	background-color: #ffffff;
+	background-image: linear-gradient(to right, #47EBF5, #21A5AE);
+	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: auto;
+	padding: 2.5em;
+}
+
+.coverpage-container img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.coverpage-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.coverphoto-container {
+		flex: 0 0 auto;
+		min-height: 30em;
+	}
+	.coverphoto-container p {
+		padding: 0;
+	}
+	.cover-msg {
+		margin-right: auto;
+		width: 42em;
+	}
+	p.cover-desc {
+		font-size: 2em;
+	}
+	p.cover-title {
+		font-size: 2.5em;
+	}
+	.buyers-container,
+	.sellers-container {
+		flex-flow: row nowrap;
+		padding: 6em;
+	}
+	.buyer-content,
+	.seller-content {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		height: 100%;
+		width: 100%;
+		justify-content: space-between;
+		padding-left: 1.5em;
+	}
+	.buyer-content {
+		text-align: right;
+	}
+	.seller-content {
+		text-align: left;
+	}
+	.buyer-content p,
+	.seller-content p {
+		font-size: 1.35em;
+	}
+	.buyer-examples,
+	.seller-examples {
+		height: auto;
+		width: 50%;
+	}
+	button.buyerbutton,
+	button.sellerbutton {
+		width: 35%;
+	}
+	button.buyerbutton {
+		margin-left: auto;
+	}
+	button.sellerbutton {
+		margin-right: auto;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.buyer-content p,
+	.seller-content p,
+	button.buyerbutton,
+	button.sellerbutton {
+		font-size: 2em;
+	}
+	p.cover-title {
+		font-size: 2.7em;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.buyer-content p,
+	.seller-content p,
+	button.buyerbutton,
+	button.sellerbutton {
+		font-size: 1.4em;
+	}
+	.buyers-container,
+	.sellers-container {
+		width: 50%;
+		padding: 4.5em;
+	}
+}
+	@media only screen and (min-width: 2560px) {
+		.coverphoto-container {
+			min-height: 60em;
+		}
+
+		.cover-msg {
+			font-size: 1.8em;
+		}
+
+		.buyer-content p,
+		.seller-content p,
+		button.buyerbutton,
+		button.sellerbutton {
+			font-size: 2.2em;
+		}
+		.buyers-container,
+		.sellers-container {
+			padding: 10em;
+		}
+	}

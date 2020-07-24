@@ -1,0 +1,39 @@
+.Topbar svg {
+	fill: black;
+}
+
+.home-toolbar-button-group.filters-enabled {
+	width: auto;
+	padding-left: 0;
+}
+
+.home-toolbar-button-group.filters-enabled i {
+	color: white;
+}
+
+.home-toolbar-button-group-button {
+	border-radius: 0 !important;
+}
+
+a.home-toolbar-button-group-button:nth-child(1) {
+	background-color: #232B2B;
+}
+
+a.home-toolbar-button-group-button:nth-child(2) {
+	background-color: #353839;
+}
+
+a.home-toolbar-button-group-button:nth-child(3) {
+	background-color: #414A4C;
+}
+
+a.home-toolbar-button-group-button {
+	color: white;
+}
+
+div#home-toolbar-show-filters, .toggle-header-container {
+	background-color:  black;
+	color: white;
+}
+
+@media only screen and (min-width: 768px) {}

@@ -1,0 +1,227 @@
+/* For mobile phones only: */
+
+.lander-content,
+.marketplace-lander-content,
+.Topbar .Logo {
+	display: none;
+}
+
+.Topbar {
+	background-color: #EEEEEE;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border: none;
+}
+
+.login-container button {
+	background-color: #0E1111;
+	margin: 0;
+}
+
+.home-toolbar {
+	border-bottom: 0;
+}
+
+.categories-container {
+	display: none;
+}
+
+#topbar-container span::before {
+	border: none;
+}
+
+#topbar-container input,
+#topbar-container input::placeholder {
+	color: white;
+}
+
+#topbar-container form button {
+	background-color: pink;
+}
+
+@media only screen and (min-width: 768px) {
+	/* For desktop only: */
+	.login-container button {
+		display: none;
+	}
+	.categories-container,
+	.Topbar .Logo {
+		display: initial;
+	}
+	.Topbar {
+		font-size: initial;
+		justify-content: center;
+		padding: 0 1em;
+	}
+	#topbar-container ul.categories {
+		align-items: center;
+		background-color: #EEEEEE;
+		display: flex;
+		flex-wrap: wrap;
+		font-weight: bold;
+		flex-direction: row;
+		line-height: 2em;
+		list-style-type: none;
+		justify-content: center;
+		padding: 1em;
+		text-align: center;
+		-webkit-box-shadow: 0 8px 6px -6px black;
+		-moz-box-shadow: 0 8px 6px -6px black;
+		box-shadow: 0 8px 6px -6px black;
+	}
+	#topbar-container ul.categories li a {
+		padding: 0 1em;
+	}
+	#topbar-container form {
+		background-color: #0E1111 !important;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	#topbar-container ul.categories {
+		justify-content: center;
+	}
+	#topbar-container ul.categories li a {
+		font-size: 0.6em;
+		padding: 0 1em;
+	}
+	#topbar-container .category-item:not(:last-child)::after {
+		content: "|";
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	/* For mobile phones only: */
+	.lander-content,
+	.marketplace-lander-content,
+	.Topbar .Logo {
+		display: none;
+	}
+	.Topbar {
+		background-color: #EEEEEE;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border: none;
+	}
+	.login-container button {
+		background-color: #0E1111;
+		margin: 0;
+	}
+	.home-toolbar {
+		border-bottom: 0;
+	}
+	.categories-container {
+		display: none;
+	}
+	#topbar-container span::before {
+		border: none;
+	}
+	#topbar-container svg {
+    stroke: white;
+	}
+	#topbar-container input,
+	#topbar-container input::placeholder {
+		color: white;
+	}
+	#topbar-container form button {
+		background-color: pink;
+	}
+	@media only screen and (min-width: 768px) {
+		/* For desktop only: */
+		.login-container button {
+			display: none;
+		}
+		.categories-container,
+		.Topbar .Logo {
+			display: initial;
+		}
+		.Topbar {
+			font-size: initial;
+			justify-content: center;
+			padding: 0 1em;
+		}
+		#topbar-container ul.categories {
+			align-items: center;
+			background-color: #EEEEEE;
+			display: flex;
+			flex-wrap: wrap;
+			font-weight: bold;
+			flex-direction: row;
+			line-height: 2em;
+			list-style-type: none;
+			justify-content: center;
+			padding: 1em;
+			text-align: center;
+			-webkit-box-shadow: 0 8px 8px -10px black;
+			-moz-box-shadow: 0 8px 8px -10px black;
+			box-shadow: 0 8px 8px -10px black;
+		}
+		#topbar-container ul.categories li a {
+			padding: 0 1em;
+		}
+		#topbar-container form {
+			background-color: #0E1111 !important;
+		}
+
+		.category-page .Topbar {
+			background: linear-gradient(
+			to right, 
+			#000000 0%, 
+			#000000 50%, 
+			#ffffff 50%, 
+			#ffffff 100%
+		);
+			height: 320px;
+			justify-content: flex-end;
+			padding: 0 12em;
+		}
+		
+		.category-page .AvatarDropdown {
+			display: none;
+		}
+		
+		.category-page .Logo {
+			padding-right: 20.2em;
+			padding-bottom: 16.5em;
+		}
+		
+		.category-page .Logo img {
+				height: auto;
+				width: 250px;
+		}
+				
+	}
+	@media only screen and (min-width: 1024px) {
+		#topbar-container ul.categories {
+			justify-content: center;
+		}
+		#topbar-container ul.categories li a {
+			font-size: 0.6em;
+			padding: 0 1em;
+		}
+		#topbar-container .category-item:not(:last-child)::after {
+			content: "|";
+		}
+	}
+	@media only screen and (min-width: 1440px) {
+		#topbar-container ul.categories li a {
+			font-size: 0.9em;
+		}
+	}
+	@media only screen and (min-width: 2560px) {
+		#topbar-container ul.categories li a {
+			font-size: initial;
+		}
+	}
+	#topbar-container ul.categories li a {
+		font-size: 0.9em;
+	}
+}
+
+@media only screen and (min-width: 2560px) {
+	#topbar-container ul.categories li a {
+		font-size: initial;
+	}
+}

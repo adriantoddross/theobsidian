@@ -1,0 +1,85 @@
+.footer-container {
+	align-items: center;
+	background-color: #EEEEEE;
+	border-top: 1px solid #EBEBEB;
+	display: flex;
+	margin: 0px;
+	padding: 5px;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+
+	-webkit-box-shadow: 0 10px 8px 8px black;
+	-moz-box-shadow: 0 10px 8px 8px black;
+	box-shadow: 0 10px 8px 8px black;
+}
+
+.footer-container .categories2 {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	list-style-type: none;
+	padding: 0.5em;
+	justify-content: center;
+	text-align: center;
+}
+
+.footer-container .contact {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 0.5em;
+	justify-content: center;
+	text-align: center;
+}
+
+.footer-container .categories2 a,
+.footer-container .contact a,
+.footer-container i.socialicon {
+	padding: 0 0.5em;
+}
+
+.social-container {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	padding: 0.5em;
+	justify-content: center;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	.branding-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.footer-container li.category-item:not(:last-child)::after {
+		content: "|";
+	}
+	.footer-container li.contact-item:not(:last-child)::after {
+		content: "|";
+	}
+	.footer-container {
+		flex-direction: column;
+		padding: 1em 0;
+	}
+	.footer-container .categories2,
+	.footer-container .contact {
+		flex-direction: row;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.footer-container {
+		flex-direction: row;
+		font-size: 0.75em;
+	}
+}
+
+@media only screen and (min-width: 2560px) {
+	.footer-container {
+		font-size: initial;
+	}
+}

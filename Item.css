@@ -1,0 +1,50 @@
+.fluid-thumbnail-grid-image-price-container {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+50,0+100 */
+  background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  
+  border-radius: 0;
+  font-weight: normal;
+  padding: 1em 0.5em;
+  right: initial;
+  text-align: left;
+  width: 60%;
+}
+
+.fluid-thumbnail-grid-image-overlay {
+    display:  none;
+}
+
+.fluid-thumbnail-grid-image-title {
+    bottom: initial;
+    font-weight: bold;
+    padding: initial;
+    overflow: hidden;
+    position: initial;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.wrapper {
+  max-width: 90em;
+}
+
+img.fluid-thumbnail-grid-image-image {
+  border-radius: 0;
+}
+
+.home-fluid-thumbnail-grid-author-avatar {
+  background-color: white;
+}
+
+a.home-fluid-thumbnail-grid-author-name {
+  color: black;
+  font-size: initial;
+}
+
+img.home-fluid-thumbnail-grid-author-avatar-image {
+  border-radius: 0px;
+}
